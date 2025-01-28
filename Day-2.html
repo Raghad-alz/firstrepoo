@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            study schedule
+        </title>
+        <style>
+            div {
+                width:30%;
+                display: inline-block;
+                margin: auto;
+            }
+            ol  {color: darkslategray; font-size: larger;}
+            ul  {color: blueviolet;} 
+        </style>
+    </head>
+    <body>
+        <h1>my study schedule</h1>
+        <h3>subjects:</h3>
+        <ol>the list:
+            <li>math</li>
+              <ul>
+                <li>ch1</li>
+                <li>ch2</li>
+                <li>ch3</li>
+              </ul>
+            <li>english</li>
+            <ul>
+                <li>ch1</li>
+                <li>ch2</li>
+            </ul>
+            <li>history</li>
+            <ul>
+                <li>ch1</li>
+                <li>ch2</li>
+                <li>ch3</li>
+                <li>ch4</li>
+            </ul>
+        </ol>
+        <table border="3"> the schedule
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>day</td>
+                    <td>subject</td>
+                    <td>chapter</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>sunday</td>
+                    <td rowspan="2">math</td>
+                    <td rowspan="2">ch1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>monday</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>tuesday</td>
+                    <td rowspan="2">english</td>
+                    <td>ch1</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>wednesday</td>
+                    <td>ch2</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>thursday</td>
+                    <td>history</td>
+                    <td>ch1 & 2</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>friday</td>
+                    <td colspan="2" rowspan="2">off</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>saturday</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>sunday</td>
+                    <td rowspan="2">history</td>
+                    <td>ch3</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>monday</td>
+                    <td>ch4</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>tuesday</td>
+                    <td rowspan="3">math</td>
+                    <td rowspan="2">ch2</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>wednesday</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>thurssday</td>
+                    <td>ch3</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>here some advices to study each subject</h2>
+
+        <div style="background-color: cadetblue;">
+            <h3>math</h3>
+            <p>Practice solving problems daily to master formulas and concepts.</p>
+        </div>
+
+        <div style="background-color: lightpink;"><h3>english</h3>
+            <p>Focus on vocabulary and grammar exercises to improve language skills.</p>
+        </div>
+
+        <div style="background-color: bisque;"><h3>history</h3>
+            <p>Create a timeline to understand key events and their connections.</p>
+        </div>
+
+        <h2>if you need more help fill this servay</h2>
+        <form>
+            <label>what is your name?</label>
+            <input type="text" id="name" name="name" required>
+
+            <p>what is your preferred study time?</p>
+            <input type="radio" id="morning" name="study_time" value="morning">
+            <label for="morning">Morning</label><br>
+            <input type="radio" id="afternoon" name="study_time" value="afternoon">
+            <label for="afternoon">Afternoon</label><br>
+            <input type="radio" id="night" name="study_time" value="night">
+            <label for="night">Night</label>
+
+            <p>which study tools do you use?</p>
+            <input type="checkbox" id="flashcards" name="tools" value="flashcards">
+            <lable for="flashcards">flashcards</lable><br>
+            <input type="checkbox" id="videos" name="tools" value="videos">
+            <label for="videos">videos</label><br>
+            <input type="checkbox" name="tools" id="apps" value="apps">
+            <label for="apps">apps</label><br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
